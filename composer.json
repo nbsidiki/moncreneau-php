@@ -1,0 +1,36 @@
+{
+    "name": "moncreneau/moncreneau-php",
+    "description": "Official Moncreneau API client for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moncreneau",
+            "email": "support@moncreneau.gn"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moncreneau\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Moncreneau\\Tests\\": "tests/"
+        }
+    },
+    "keywords": [
+        "moncreneau",
+        "api",
+        "appointments",
+        "booking"
+    ],
+    "homepage": "https://github.com/moncreneau/moncreneau-php"
+}
