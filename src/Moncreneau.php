@@ -18,7 +18,7 @@ class Moncreneau
      */
     public function __construct(string $apiKey, array $config = [])
     {
-        $baseUrl = $config['baseUrl'] ?? 'https://mc.duckdns.org/api/v1';
+        $baseUrl = $config['baseUrl'] ?? 'https://mc-prd.duckdns.org/api/v1';
         $timeout = $config['timeout'] ?? 30;
 
         $http = new HttpClient($apiKey, $baseUrl, $timeout);

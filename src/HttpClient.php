@@ -10,7 +10,7 @@ class HttpClient
 {
     private Client $client;
 
-    public function __construct(string $apiKey, string $baseUrl = 'https://mc.duckdns.org/api/v1', int $timeout = 30)
+    public function __construct(string $apiKey, string $baseUrl = 'https://mc-prd.duckdns.org/api/v1', int $timeout = 30)
     {
         $this->client = new Client([
             'base_uri' => rtrim($baseUrl, '/'),
