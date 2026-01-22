@@ -36,7 +36,7 @@ echo $appointment['id']; // appt_abc123
 
 ## Documentation
 
-Full documentation: [https://docs.moncreneau.gn/sdks/php](https://docs.moncreneau.gn/sdks/php)
+Full documentation: [https://moncreneau-docs.vercel.app/docs/v1/sdks/php](https://moncreneau-docs.vercel.app/docs/v1/sdks/php)
 
 ## Features
 
@@ -52,7 +52,7 @@ Full documentation: [https://docs.moncreneau.gn/sdks/php](https://docs.moncrenea
 
 ```php
 $client = new Moncreneau('mk_live_...', [
-    'baseUrl' => 'https://api.moncreneau.gn/v1', // optional
+    'baseUrl' => 'https://mc.duckdns.org/api/v1', // optional
     'timeout' => 30 // optional
 ]);
 ```
@@ -167,9 +167,9 @@ class AppointmentController extends Controller
 
 ## Support
 
-- **Documentation**: [https://docs.moncreneau.gn](https://docs.moncreneau.gn)
-- **Issues**: [GitHub Issues](https://github.com/moncreneau/moncreneau-php/issues)
-- **Email**: support@moncreneau.gn
+- **Documentation**: [https://moncreneau-docs.vercel.app](https://moncreneau-docs.vercel.app)
+- **Issues**: [GitHub Issues](https://github.com/nbsidiki/moncreneau-php/issues)
+- **Email**: moncreneau.rdv@gmail.com
 
 ## License
 
