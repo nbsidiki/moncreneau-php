@@ -24,14 +24,12 @@ $client = new Moncreneau('mk_live_YOUR_API_KEY');
 
 // Create an appointment
 $appointment = $client->appointments->create([
-    'departmentId' => 'dept_123',
+    'departmentId' => 5,  // Integer: ID du département
     'dateTime' => '2026-01-20T10:00:00',
-    'userName' => 'Jean Dupont',
-    'userPhone' => '+224621234567',
-    'userEmail' => 'jean.dupont@example.com'
+    'name' => 'Jean Dupont'  // Nom du bénéficiaire
 ]);
 
-echo $appointment['id']; // appt_abc123
+echo $appointment['id']; // 123
 ```
 
 ## Documentation
@@ -62,10 +60,9 @@ $client = new Moncreneau('mk_live_...', [
 ```php
 // Create
 $appointment = $client->appointments->create([
-    'departmentId' => 'dept_123',
+    'departmentId' => 5,  // Integer: ID du département
     'dateTime' => '2026-01-20T10:00:00',
-    'userName' => 'Jean Dupont',
-    'userPhone' => '+224621234567'
+    'name' => 'Jean Dupont'  // Nom du bénéficiaire
 ]);
 
 // List
