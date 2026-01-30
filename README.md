@@ -86,7 +86,7 @@ $client->appointments->cancel(123);
 $departments = $client->departments->list();
 
 // Get availability
-$availability = $client->departments->getAvailability('dept_123', [
+$availability = $client->departments->getAvailability(5, [
     'startDate' => '2026-01-20',
     'endDate' => '2026-01-27'
 ]);
