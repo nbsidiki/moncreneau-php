@@ -73,10 +73,10 @@ $appointments = $client->appointments->list([
 ]);
 
 // Retrieve
-$appointment = $client->appointments->retrieve('appt_abc123');
+$appointment = $client->appointments->retrieve(123);
 
 // Cancel
-$client->appointments->cancel('appt_abc123');
+$client->appointments->cancel(123);
 ```
 
 ### Departments
