@@ -85,11 +85,9 @@ $client->appointments->cancel(123);
 // List
 $departments = $client->departments->list();
 
-// Get availability
-$availability = $client->departments->getAvailability(5, [
-    'startDate' => '2026-01-20',
-    'endDate' => '2026-01-27'
-]);
+// Check availability for a single slot
+$availability = $client->departments->getAvailability('5', '2026-01-20T10:00:00');
+echo $availability['available'], $availability['remainingSlots'];
 ```
 
 ### Error Handling

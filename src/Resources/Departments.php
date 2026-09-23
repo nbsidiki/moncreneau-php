@@ -30,10 +30,11 @@ class Departments
     }
 
     /**
-     * Get availability for a department
+     * Check availability for a single slot. The backend only accepts one
+     * dateTime, not a date range.
      */
-    public function getAvailability(string $id, array $params): array
+    public function getAvailability(string $id, string $dateTime): array
     {
-        return $this->http->get("/departments/{$id}/availability", $params);
+        return $this->http->get("/departments/{$id}/availability", ['dateTime' => $dateTime]);
     }
 }
